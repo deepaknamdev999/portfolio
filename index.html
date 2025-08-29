@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deepak Namdev - Portfolio</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+    body{background:#f4f4f4;color:#333;line-height:1.6;}
+    a{text-decoration:none;color:inherit;}
+    nav{background:#222;color:#fff;padding:15px 30px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;}
+    nav h1{font-size:24px;color:#00bcd4;}
+    nav ul{display:flex;list-style:none;}
+    nav ul li{margin-left:20px;}
+    nav ul li a{color:#fff;transition:color 0.3s;}
+    nav ul li a:hover{color:#00bcd4;}
+    .hero{height:100vh;display:flex;justify-content:center;align-items:center;text-align:center;background:linear-gradient(to right,#00bcd4,#2196f3);color:#fff;}
+    .hero h2{font-size:48px;}
+    .hero p{margin:15px 0;font-size:20px;}
+    .hero button{padding:10px 20px;border:none;background:#fff;color:#2196f3;font-size:16px;border-radius:5px;cursor:pointer;transition:0.3s;}
+    .hero button:hover{background:#eee;}
+    .section{padding:60px 20px;text-align:center;}
+    .section h2{margin-bottom:20px;font-size:32px;color:#2196f3;}
+    .about p{max-width:600px;margin:auto;}
+    .skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-top:20px;}
+    .skill{background:#fff;padding:20px;border-radius:10px;box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+    .skill h3{color:#00bcd4;}
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:20px;}
+    .project{background:#fff;padding:15px;border-radius:10px;box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+    .project img{width:100%;border-radius:10px;}
+    .experience{max-width:900px;margin:auto;text-align:left;}
+    .experience h3{color:#00bcd4;margin-top:20px;}
+    .experience ul{margin-left:20px;margin-top:10px;}
+    .contact form{max-width:500px;margin:auto;display:flex;flex-direction:column;}
+    .contact input,.contact textarea{margin:10px 0;padding:10px;border-radius:5px;border:1px solid #ccc;}
+    .contact button{padding:10px;border:none;background:#2196f3;color:#fff;cursor:pointer;border-radius:5px;}
+    .contact button:hover{background:#1976d2;}
+    footer{background:#222;color:#fff;text-align:center;padding:15px;margin-top:30px;}
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h1>Deepak Namdev</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div>
+      <h2>Hello, I'm Deepak 👋</h2>
+      <p>Business Development Analyst | Aspiring Web Developer | Java | C++ | Problem Solver</p>
+      <button onclick="scrollToSection('contact')">Hire Me</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <h2>About Me</h2>
+    <p>
+      Driven Business Development Analyst with strong analytical, communication, and problem-solving skills. 
+      Experienced in client coordination, dealer management, and data entry processes. 
+      Currently pursuing Bachelor of Computer Applications (BCA) with interest in web development.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section" id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill"><h3>Good Communication</h3></div>
+      <div class="skill"><h3>Time Management</h3></div>
+      <div class="skill"><h3>Decision Making</h3></div>
+      <div class="skill"><h3>Problem Solving</h3></div>
+      <div class="skill"><h3>Teamwork</h3></div>
+      <div class="skill"><h3>Java, C++, HTML, CSS, JavaScript</h3></div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section" id="experience">
+    <h2>Experience</h2>
+    <div class="experience">
+
+      <h3>Bharat Homoeopathy Hospital Pvt Ltd (Mar 2024 – Jun 2024)</h3>
+      <p><strong>Role:</strong> Data Entry with Calls</p>
+      <ul>
+        <li>Confirmed medicine orders with customers before dispatching.</li>
+        <li>Updated delivery status ("On the Way", "Out for Delivery").</li>
+        <li>Maintained proper records of dispatched and delivered medicines.</li>
+        <li>Resolved delivery issues by coordinating with delivery personnel.</li>
+      </ul>
+
+      <h3>Droom Technology Pvt Ltd (Jun 2024 – Aug 2025)</h3>
+      <p><strong>Role:</strong> Business Development Analyst</p>
+      <ul>
+        <li>Responsible for achieving monthly sales targets in the C2D (Customer to Dealer) process.</li>
+        <li>Onboarded and guided dealers on platform processes and benefits.</li>
+        <li>Negotiated prices between owners and dealers for smooth transactions.</li>
+        <li>Maintained daily records of calls, deals, and dealer onboarding.</li>
+        <li>Conducted market research and competitor analysis to expand dealer networks.</li>
+      </ul>
+
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>A responsive portfolio website built with HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="project">
+        <h3>Java Application</h3>
+        <p>A simple Java console application for data management.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Deepak Namdev | All Rights Reserved</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
